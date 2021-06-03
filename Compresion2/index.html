@@ -7,9 +7,19 @@
   </head>
   <script>
     function resizeCanvas() {
-        var canvs = document.getElementById("unity-canvas");
-            canvs.width = 900 ;
-            canvs.height = 1000;
+  if(  navigator.userAgent.match(/Android/i) ||
+  navigator.userAgent.match(/webOS/i) ||
+  navigator.userAgent.match(/iPhone/i) ||
+  navigator.userAgent.match(/iPod/i)) {
+    var canvs = document.getElementById("unity-canvas");
+              canvs.width = 500 ;
+              canvs.height = 900;
+  }else{
+    var canvs = document.getElementById("unity-canvas");
+              canvs.width = 900 ;
+              canvs.height = 1000;
+  }
+
 
 
     }

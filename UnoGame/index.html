@@ -53,13 +53,13 @@
       // config.matchWebGLToCanvasSize = false;
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-      canvas.style.width = "620px";
-      canvas.style.height = "1080px";
-      
-    } else {
-      canvas.style.width = "360px";
-      canvas.style.height = "640px";
-    }
+  canvas.style.width = "620px";
+  canvas.style.height = "1080px";
+  
+} else {
+  canvas.style.width = "360px";
+  canvas.style.height = "640px";
+}
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
@@ -80,3 +80,11 @@
     </script>
   </body>
 </html>
+<!-- if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+  canvas.style.width = "620px";
+  canvas.style.height = "1080px";
+  
+} else {
+  canvas.style.width = "360px";
+  canvas.style.height = "640px";
+} -->

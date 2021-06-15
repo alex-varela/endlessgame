@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1080 height=720></canvas>
+      <canvas id="unity-canvas" width=360 height=640></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -53,13 +53,18 @@
       // config.matchWebGLToCanvasSize = false;
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-  canvas.style.width = "620px";
-  canvas.style.height = "1080px";
-  
-} else {
-  canvas.style.width = "360px";
-  canvas.style.height = "640px";
-}
+        container.className = "unity-mobile";
+        // Avoid draining fillrate performance on mobile devices,
+        // and default/override low DPI mode on mobile browsers.
+        config.devicePixelRatio = 1;
+        mobileWarning.style.display = "block";
+        setTimeout(() => {
+          mobileWarning.style.display = "none";
+        }, 5000);
+      } else {
+        canvas.style.width = "360px";
+        canvas.style.height = "640px";
+      }
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
@@ -80,11 +85,3 @@
     </script>
   </body>
 </html>
-<!-- if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-  canvas.style.width = "620px";
-  canvas.style.height = "1080px";
-  
-} else {
-  canvas.style.width = "360px";
-  canvas.style.height = "640px";
-} -->

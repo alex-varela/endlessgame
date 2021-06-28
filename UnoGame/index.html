@@ -17,7 +17,8 @@
         </div>
       </div>
       <div id="unity-mobile-warning">
-        WebGL builds are not supported on mobile devices.
+       
+<a href="https://www.uno-terra.com/">Participa en la rifa has click aqui</a>
       </div>
       <div id="unity-footer">
         <!-- <div id="unity-webgl-logo"></div>
@@ -57,7 +58,9 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
+        if (/iPhone|iPad/i.test(navigator.userAgent)) {
         mobileWarning.style.display = "block";
+        }
         // setTimeout(() => {
         //   mobileWarning.style.display = "none";
         // }, 5000);

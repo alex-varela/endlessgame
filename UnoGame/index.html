@@ -18,8 +18,8 @@
       </div>
       <div id="unity-mobile-warning">
        
-<a href="https://www.uno-terra.com/">Participa en la rifa has click aqui</a>
-      </div>
+        <a href="https://www.uno-terra.com/">Participa en la rifa has click aqui</a>
+              </div>
       <div id="unity-footer">
         <!-- <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
@@ -58,12 +58,11 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        if (/iPhone|iPad/i.test(navigator.userAgent)) {
         mobileWarning.style.display = "block";
-        }
         // setTimeout(() => {
         //   mobileWarning.style.display = "none";
         // }, 5000);
+      //  mobileWarning.style.display = "none";
       } else {
         canvas.style.width = "720px";
         canvas.style.height = "1080px";

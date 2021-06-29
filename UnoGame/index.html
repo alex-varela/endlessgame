@@ -18,7 +18,7 @@
       </div>
       <div id="unity-mobile-warning">
        
-        <a href="https://www.uno-terra.com/">Participa en la rifa has click aqui</a>
+        <a href="https://www.uno-terra.com/" id="text">RECLAMA TU PREMIO</a>
               </div>
       <div id="unity-footer">
         <!-- <div id="unity-webgl-logo"></div>
@@ -58,14 +58,14 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        mobileWarning.style.display = "block";
+        mobileWarning.style.display = "none";
         // setTimeout(() => {
         //   mobileWarning.style.display = "none";
         // }, 5000);
-      //  mobileWarning.style.display = "none";
       } else {
         canvas.style.width = "720px";
         canvas.style.height = "1080px";
+        mobileWarning.style.display = "none";
       }
       loadingBar.style.display = "block";
 

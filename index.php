@@ -2,8 +2,8 @@
 
 
 <!-- /**
- <div id="unity-mobile-warning">
+      <div id="unity-mobile-warning">
        
-       <a href="https://www.uno-terra.com/">Participa en la rifa has click aqui</a>
-             </div>
+        <a href="https://www.uno-terra.com/" id="text">RECLAMA TU PREMIO</a>
+              </div>
 */ -->

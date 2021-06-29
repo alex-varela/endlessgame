@@ -17,9 +17,8 @@
         </div>
       </div>
       <div id="unity-mobile-warning">
-       
         <a href="https://www.uno-terra.com/" id="text">RECLAMA TU PREMIO</a>
-              </div>
+      </div>
       <div id="unity-footer">
         <!-- <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
@@ -57,15 +56,16 @@
         container.className = "unity-mobile";
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
-        config.devicePixelRatio = 1;
         mobileWarning.style.display = "none";
+        config.devicePixelRatio = 1;
+        // mobileWarning.style.display = "block";
         // setTimeout(() => {
         //   mobileWarning.style.display = "none";
         // }, 5000);
       } else {
+        mobileWarning.style.display = "none";
         canvas.style.width = "720px";
         canvas.style.height = "1080px";
-        mobileWarning.style.display = "none";
       }
       loadingBar.style.display = "block";
 

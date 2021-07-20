@@ -6,15 +6,6 @@
     <title>Unity WebGL Player | EndlessRunner</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNM8VE9MDH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-NNM8VE9MDH');
-    </script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -65,7 +56,7 @@
         container.className = "unity-mobile";
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
-        config.devicePixelRatio = 1;
+        // config.devicePixelRatio = 1;
         // mobileWarning.style.display = "block";
         // setTimeout(() => {
         //   mobileWarning.style.display = "none";
@@ -85,7 +76,7 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-          loadingBar.style.display = "none";
+           loadingBar.style.display = "none";
           // fullscreenButton.onclick = () => {
           //   unityInstance.SetFullscreen(1);
           // };

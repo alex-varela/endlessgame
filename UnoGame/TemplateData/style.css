@@ -72,18 +72,18 @@ body {
 }
 #unity-mobile-warning {
   text-align: center;
-  width: 45%;
+  width: 25%;
   line-height: 5px;
   font-family: arial;
   font-size: 30px;
   position: absolute;
   left: 50%;
-  top: 85%;
+  top: 86%;
   transform: translate(-50%);
   background: #005baa;
-  padding: 50px;
+  padding: 40px;
   border-radius: 60px;
-  background-image: linear-gradient(#0084f7, #005baa);
+  background-image: linear-gradient(#e7c700, #e7c700);
   font-weight: bold;
   border: 10px solid white;
 }
